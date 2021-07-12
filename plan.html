@@ -5,7 +5,10 @@
 <style>
 main{
         background-image: url('https://wallpaperaccess.com/full/1567665.png');
-        background-size: auto;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         font-family: "Nunito", sans-serif;
         color:white;
     }
@@ -42,8 +45,17 @@ main{
         margin-left: auto;
         margin-right: auto;
         display: block;
+        position: absolute;
+        top: 950px;
+        left: 75px;
+        z-index: 0;
     }
-
+    #the_plan{
+        position: "fixed";
+        top: 400px;
+        left: 100px;
+       
+    }
 </style>
 
 <main>
@@ -62,7 +74,13 @@ main{
         <p>This is a project I designed in order to prove that not going to school and learning by myself may actually be a good idea.</p>
     </div>
 
+
+
     <img class="mastermind" src="https://static.tvtropes.org/pmwiki/pub/images/secret_empire_vol_1_9_villain_variant_textless.png");
     >
+
+    <div id="the_plan">
+        <p>The plan would be to either stay at home or a cheap apartment and focus all of my time on studying. I would learn HTML,CSS, and Javascript. I would then focus on react.js as well, making projects along the way in order to build a good github page and resume.</p>
+    </div>
 
 </main>
