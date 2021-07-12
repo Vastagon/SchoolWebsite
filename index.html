@@ -8,6 +8,12 @@ main{
         font-style: italic;
         color:white;
     }
+    body{
+        margin: 0;
+        display: grid;
+        place-content: center;
+        text-align: center;
+    }
     .foreground{
         position: relative;
         z-index: 1;
@@ -24,9 +30,13 @@ main{
         z-index: 0;
     }
     h1{
+        font-family: 'Courier New', Courier, monospace;
         position: relative;
         text-align: center;
+        color: white;
+        background-color: black;
         font-size: 320%;
+        width:max-content;
     }
     .topNav{
         position:fixed;
@@ -55,6 +65,34 @@ main{
     .beginning{
         font-size: 30px;
 
+    }
+
+    h1::before,
+    h1::after{
+        content: '';
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+    }
+
+    h1::before{
+        background: black;
+        animation: typewriter 5s steps(29) 1s forwards;
+    }
+    h1::after{
+        width: .125em;
+        background: white;
+        animation: typewriter 5s steps(29) 1s forwards,
+        blink 800ms steps(29) infinite;
+    }
+
+    @keyframes typewriter{
+        to{left:100%}
+    }
+    @keyframes blink{
+        to{background: transparent}
     }
 </style>
 
