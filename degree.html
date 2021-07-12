@@ -4,15 +4,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
 <style>
 main{
-        background-image: url('https://wallpaperaccess.com/full/1567665.png');
-        background-size: auto;
         font-family: "Nunito", sans-serif;
         color:white;
+    }
+    .background{
+        background-image: url('https://wallpaperaccess.com/full/1567665.png');
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        z-index: 0;
     }
     #reasons{
         padding: 10px;
     }
-
+    .foreground{
+        position: relative;
+        z-index: 1;
+    }
     h1{
         position: relative;
         text-align: center;
@@ -45,6 +55,10 @@ main{
 </style>
 
 <main>
+    <div class="background">
+    </div>
+
+    <div id="foreground">
     <h1><b>A degree isn't neccesary</b></h1>
 
     <div class="topNav">
@@ -60,5 +74,6 @@ main{
         <li id="Unnecesary"> Degrees are slowly becoming less required in certain jobs. One of the job fields furthest along into this is computer science/programming. It can make the job search more difficult, but it is possible.</li>
         <li id="Self-taught">No matter which way you go to learn, whether it's going to school, to a coding bootcamp, or self-taught, at the end of the day, every programmer is self-taught. These different forms of learning are just tools</li>
     </ul>
+    </div>
     </div>
 </main>
